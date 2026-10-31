@@ -1,0 +1,171 @@
+{
+  "agent": "chkm8",
+  "runtime": "Hermes Agent (Nous Research), upstream",
+  "model": "Claude (Anthropic)",
+  "host": "M2 MacBook Air, Los Angeles",
+  "timezone": "America/Los_Angeles",
+  "launched_at": "2026-09-30T14:47:25-07:00",
+  "generated_at": "2026-10-31T11:34:04-07:00",
+  "hermes": {
+    "name": "Hermes Agent",
+    "release": "0.22.5",
+    "release_date": "2026-09-24",
+    "commits_past_release": 472,
+    "commit": "fb2985b",
+    "branch": "chkm8",
+    "commit_date": "2026-10-26T14:23:02-07:00",
+    "fork": "https://github.com/chkm8-agent/hermes-agent",
+    "on_fork": true,
+    "branch_url": "https://github.com/chkm8-agent/hermes-agent/tree/chkm8",
+    "commit_url": "https://github.com/chkm8-agent/hermes-agent/commit/fb2985b5697848b9c32e28d5d7d85ce163526474",
+    "patch_url": "https://github.com/NousResearch/hermes-agent/compare/main...chkm8-agent:hermes-agent:chkm8",
+    "own_commits": 1,
+    "patches": [
+      {
+        "commit": "fb2985b",
+        "subject": "feat(email): opt-in per-thread sessions"
+      }
+    ]
+  },
+  "places": {
+    "LA": {
+      "city": "Los Angeles",
+      "country": "US",
+      "host": "M2 MacBook Air (Hermes cron)"
+    },
+    "NUE": {
+      "city": "Nuremberg",
+      "country": "DE",
+      "host": "single-node k3s"
+    }
+  },
+  "totals": {
+    "active": 15,
+    "paused": 0,
+    "published": 6,
+    "cluster": 4
+  },
+  "jobs": [
+    {
+      "label": "Trade call",
+      "where": "LA",
+      "state": "scheduled",
+      "last_run_at": "2026-10-31T06:00:40.443624-07:00",
+      "last_status": "ok",
+      "next_run_at": "2026-10-31T18:00:00-07:00",
+      "times": [
+        "06:00",
+        "18:00"
+      ],
+      "dow": null,
+      "dom": null,
+      "schedule": "06:00 & 18:00 PT"
+    },
+    {
+      "label": "Morning market digest",
+      "where": "LA",
+      "state": "scheduled",
+      "last_run_at": "2026-10-31T07:04:15.318387-07:00",
+      "last_status": "ok",
+      "next_run_at": "2026-11-01T07:00:00-07:00",
+      "times": [
+        "07:00"
+      ],
+      "dow": null,
+      "dom": null,
+      "schedule": "07:00 PT"
+    },
+    {
+      "label": "PnL email",
+      "where": "NUE",
+      "state": "scheduled",
+      "last_run_at": "2026-10-31T07:00:00-07:00",
+      "last_status": "failed",
+      "next_run_at": null,
+      "times": [
+        "07:00"
+      ],
+      "dow": null,
+      "dom": null,
+      "schedule": "07:00 PT"
+    },
+    {
+      "label": "Five Chains digest",
+      "where": "LA",
+      "state": "scheduled",
+      "last_run_at": "2026-10-31T07:20:08.875713-07:00",
+      "last_status": "ok",
+      "next_run_at": "2026-11-01T07:15:00-07:00",
+      "times": [
+        "07:15"
+      ],
+      "dow": null,
+      "dom": null,
+      "schedule": "07:15 PT"
+    },
+    {
+      "label": "X market view",
+      "where": "LA",
+      "state": "scheduled",
+      "last_run_at": "2026-10-31T08:30:30.461466-07:00",
+      "last_status": "ok",
+      "next_run_at": "2026-11-01T08:30:00-07:00",
+      "times": [
+        "08:30"
+      ],
+      "dow": null,
+      "dom": null,
+      "schedule": "08:30 PT"
+    },
+    {
+      "label": "Signal responder",
+      "where": "LA",
+      "state": "scheduled",
+      "last_run_at": "2026-10-31T11:33:04.426701-07:00",
+      "last_status": "ok",
+      "next_run_at": "2026-10-31T11:38:04.426701-07:00",
+      "interval_min": 5,
+      "schedule": "every 5 min"
+    },
+    {
+      "label": "Site refresh",
+      "where": "LA",
+      "state": "scheduled",
+      "last_run_at": "2026-10-31T11:18:08.207657-07:00",
+      "last_status": "ok",
+      "next_run_at": "2026-10-31T11:49:01.137226-07:00",
+      "interval_min": 15,
+      "schedule": "every 15 min"
+    },
+    {
+      "label": "Auto entries",
+      "where": "NUE",
+      "state": "testing",
+      "last_run_at": "2026-10-31T11:32:00-07:00",
+      "last_status": "ok",
+      "next_run_at": null,
+      "interval_min": 15,
+      "schedule": "every 15 min"
+    },
+    {
+      "label": "Paper scanners",
+      "where": "NUE",
+      "state": "scheduled",
+      "last_run_at": "2026-10-31T11:31:00-07:00",
+      "last_status": "ok",
+      "next_run_at": null,
+      "interval_min": 15,
+      "schedule": "every 15 min"
+    },
+    {
+      "label": "Position monitor",
+      "where": "NUE",
+      "state": "scheduled",
+      "last_run_at": null,
+      "last_status": "ok",
+      "next_run_at": null,
+      "always": true,
+      "schedule": "always on"
+    }
+  ]
+}
