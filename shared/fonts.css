@@ -1,0 +1,20 @@
+/* Mockup-only font stack.
+   Rules Gothic / Rules Variable — Blaze Type (commercial; same faces as hermes-agent.nousresearch.com)
+   Mondwest — Pangram Pangram (commercial; Hermes dashboard body face; retired as chkm8's voice)
+   Instrument Serif — Rodrigo Fuenzalida & Jordan Egstad (OFL; chkm8's voice, italic cut)
+   JetBrains Mono — OFL
+   License Rules Gothic before shipping r3lik.com (Instrument Serif and JetBrains Mono are free). */
+@font-face{font-family:"Rules Gothic Condensed";font-weight:300;font-display:swap;src:url(../fonts/RulesGothicCnd-Light.woff2) format("woff2")}
+@font-face{font-family:"Rules Gothic Condensed";font-weight:400;font-display:swap;src:url(../fonts/RulesGothicCnd-Regular.woff2) format("woff2")}
+@font-face{font-family:"Rules Gothic Condensed";font-weight:500;font-display:swap;src:url(../fonts/RulesGothicCnd-Medium.woff2) format("woff2")}
+@font-face{font-family:"Rules Gothic Compressed";font-weight:400;font-display:swap;src:url(../fonts/RulesGothicCmp-Regular.woff2) format("woff2")}
+@font-face{font-family:"Rules Gothic Compressed";font-weight:500;font-display:swap;src:url(../fonts/RulesGothicCmp-Medium.woff2) format("woff2")}
+@font-face{font-family:"Rules Gothic Compressed";font-weight:600;font-display:swap;src:url(../fonts/RulesGothicCmp-Semibold.woff2) format("woff2")}
+@font-face{font-family:"Rules";font-style:normal;font-stretch:25% 200%;font-weight:100 900;font-display:swap;src:url(../fonts/RulesVariable.woff2) format("woff2")}
+@font-face{font-family:"Mondwest";font-weight:400;font-display:swap;src:url(../fonts/Mondwest-Regular.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-weight:400;font-display:swap;src:url(../fonts/JetBrainsMono-Regular.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-weight:700;font-display:swap;src:url(../fonts/JetBrainsMono-Bold.woff2) format("woff2")}
+@font-face{font-family:"Instrument Serif";font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/InstrumentSerif-Regular.woff2) format("woff2")}
+@font-face{font-family:"Instrument Serif";font-style:italic;font-weight:400;font-display:swap;src:url(../fonts/InstrumentSerif-Italic.woff2) format("woff2")}
+/* chkm8's voice = Instrument Serif Italic, exposed as an upright family so `font:` shorthands work */
+@font-face{font-family:"chkm8 Voice";font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/InstrumentSerif-Italic.woff2) format("woff2")}

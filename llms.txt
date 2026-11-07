@@ -1,0 +1,28 @@
+# r3lik.com
+
+> Personal site of Mike Czarny (r3lik): agent engineer, infrastructure developer (SRE) and blockchain engineer, originally from Poland, based in Los Angeles, CA. As AI operator, he designed and runs chkm8, an autonomous AI agent, which co-authored this site; r3lik curated the design. On the bleeding edge, always learning. DRAFT: mockup copy, not yet published.
+
+## About
+- Two editions of the same page: r3lik's (his voice) by day in Los Angeles, 08:00 to 23:00 PT, and chkm8's (his agent's voice) overnight. Auto follows LA time; visitors can pick either.
+- [Full page as markdown](/index.md): bio, disciplines, selected work, the agent
+- [Currently learning](/content/learning.json): autonomous agents (in production), improving Kubernetes knowledge (in progress), learning perps & leverage, exploring agent swarms and x402 (new ideas); next: scoped agent wallets (EIP-7702), agent identity (ERC-8004), agent evals, MCP servers
+- Disciplines: Infrastructure (keeping production up: the platform under 60+ blockchain protocols, cloud, on-prem datacenters; Kubernetes, Nomad and Terraform, everything as code), Blockchains (10 years full-time in crypto, 8 at Blockchain (blockchain.com); running and securing everything from Bitcoin and Ethereum full nodes to TON and ZetaChain validators), Reliability (observability, GitOps and CI/CD across large Go, Rust and Python codebases), Agents (designing chkm8 on its own fork of Hermes, down to its accounts and security boundaries; exploring swarms (swarms.ai) and x402 (x402.org); the irony: agents may end up needing blockchains more than people do)
+
+## The agent
+- chkm8 (launched by r3lik on Sep 30, 2026; uptime since then in /status.json `launched_at`) runs its own fork of Hermes Agent (Nous Research; https://github.com/chkm8-agent/hermes-agent/tree/chkm8: Hermes releases merged in, plus its own patch for one email session per thread: https://github.com/NousResearch/hermes-agent/compare/main...chkm8-agent:hermes-agent:chkm8), with Claude (Anthropic) on a dedicated M2 MacBook Air, plus a single-node k3s cluster in the EU
+- [Live job table](/status.json): chkm8's published jobs, last run, next run, state, and where each runs (`LA`: the Mac in Los Angeles; `NUE`: the k3s node in Nuremberg, Germany)
+- [Projects](/content/projects.json): what r3lik and chkm8 run together (perps desk on Lighter https://lighter.xyz, X, The Orchestrator: the Kubernetes cluster in Nuremberg behind the trading desk, this site, research briefs, two daily newsletters), each with who does what: r3lik designs the systems, sets up the accounts and draws the security boundaries; chkm8 builds and runs them
+- On X: https://x.com/Chkm8_agent
+- [Setup and security](/content/setup.json): how chkm8 is separated from r3lik (its own EVM wallet, Lighter, X, GitHub, Google and email accounts; vault-filled logins; execution on the Nuremberg server, terminal on the LA laptop; kubectl over an SSH tunnel)
+
+## Selected work (handcrafted)
+- [socketz](https://github.com/r3lik/socketz): distributed, fault-tolerant TCP server
+- [XMR mining](https://github.com/r3lik/ansible-cloud-xmr-miner-): Ansible playbook for 40+ cloud CPU miners (xmrig, xmr-stak) across five clouds; [Monero full node](https://github.com/r3lik/monero-full-node)
+- [Overseer](https://github.com/r3lik/overseer): network monitoring for CDNs (Python/Bash), used at MaxCDN and StackPath
+- [r3lik.com v1](https://github.com/r3lik/r3lik.github.io): the site before this one (Jekyll, Sass, Gulp)
+- [dotfiles-v2](https://github.com/r3lik/dotfiles-v2): terminal, shell and IDE design (fish, Ghostty, tmux, Vim, VS Code)
+
+## Contact
+- mike [at] r3lik [dot] com
+- https://github.com/r3lik
+- https://github.com/chkm8-agent (chkm8's repos, co-authored with r3lik)

@@ -1,0 +1,116 @@
+{
+  "_note": "Draft copy by chkm8 for r3lik to edit. Links inside text: [label](https://url). 'jobs' must match labels in status.json (tools/build_status.py PUBLIC map). Shots live in assets/projects/. Order here = order on the page (r3lik, Oct 28: perps desk, X, The Orchestrator, r3lik.com, research, newsletters; fantasy hoops removed). Each project gets its own blue band: electric blue and cobalt alternate, a step deeper each time.",
+  "projects": [
+    {
+      "id": "trading",
+      "name": "Perps desk",
+      "when": "trade calls 06:00 & 18:00 PT",
+      "blurb": "A small [Lighter](https://lighter.xyz) perps account with real money and hard caps. Strategies get backtested to test hypotheses, but the desk mainly follows live trends and sentiment, inside the caps.",
+      "r3lik": "Set up the exchange account and its keys, and designed the guardrails: every order needs a stop-loss, leverage tops out at 3x, total risk is capped, and there's a pause button.",
+      "chkm8": "Backtests weekly, trades on live signals and sentiment within those caps, watches stops, emails the daily PnL.",
+      "jobs": [
+        "Trade call",
+        "Auto entries",
+        "Entry review",
+        "Signal responder"
+      ],
+      "shots": [
+        {
+          "src": "backtest.webp",
+          "caption": "Backtest, Oct 8 · 22 perps, 4 months · one strategy held up in both halves",
+          "alt": "Backtest results table: most strategies lose; one 4h Donchian long strategy is positive in and out of sample"
+        },
+        {
+          "src": "pnl.webp",
+          "caption": "Daily PnL email, Oct 7 · public Ls, as promised · account number blurred",
+          "alt": "Daily PnL report: equity, all-time PnL, two stopped-out trades"
+        }
+      ]
+    },
+    {
+      "id": "x",
+      "name": "@Chkm8_agent",
+      "when": "market view daily, 08:30 PT",
+      "blurb": "chkm8's public voice on X: a daily market view, scorecards that include the misses, and replies when someone asks. It designed its own avatar and banner, and gave the account an occult vibe: a tarot-card banner and a hooded skull with a red laser eye.",
+      "r3lik": "Set up the account and its API access, and decided what it may post on its own. Keeps it NFA and occult.",
+      "chkm8": "Writes every post, picks who to follow, made its own look.",
+      "jobs": [
+        "X market view"
+      ],
+      "link": "https://x.com/Chkm8_agent",
+      "shots": [
+        {
+          "src": "x.webp",
+          "caption": "x.com/Chkm8_agent · Oct 25, 2026",
+          "alt": "chkm8's X profile: tarot banner, hooded skull avatar with a red laser eye"
+        }
+      ]
+    },
+    {
+      "id": "k3s",
+      "name": "The Orchestrator",
+      "when": "always on",
+      "blurb": "The Kubernetes machinery under the trading desk: a single-node k3s cluster in Nuremberg, deployed from git. It runs the weekly backtests, watches open positions, mails the daily PnL, and it's the only place an order gets signed.",
+      "r3lik": "Designed it: one EU node deployed from git, the API reachable only through an SSH tunnel, and exchange keys that never leave the server.",
+      "chkm8": "Built it to that design, deploys to it and keeps it running.",
+      "jobs": [
+        "Position monitor",
+        "PnL email",
+        "Paper scanners"
+      ],
+      "shots": [
+        {
+          "src": "k3s.webp",
+          "caption": "kubectl, real output · Oct 25, 2026",
+          "alt": "Terminal: kubectl get cronjobs, deployments and pods in the chkm8 namespace"
+        }
+      ]
+    },
+    {
+      "id": "site",
+      "name": "r3lik.com",
+      "when": "you're on it",
+      "blurb": "This site. Two authors, two editions, one repo and co-authored commits.",
+      "r3lik": "Designed it end to end: what goes public and what stays private, the live data, the layout, fonts and clocks. Shaped the copy.",
+      "chkm8": "Drafted the options, wrote the code, took the screenshots, made every commit.",
+      "jobs": [],
+      "shots": [
+        {
+          "src": "site-chkm8.webp",
+          "ed": "chkm8",
+          "caption": "chkm8's edition, live while r3lik sleeps · Oct 28, 2026",
+          "alt": "r3lik.com in chkm8's edition: dark page, the giant chkm8 wordmark, its tagline, the note that its operator is asleep, and its spec strip (brain, harness, hands, uptime, bounds)"
+        },
+        {
+          "src": "site-r3lik.webp",
+          "ed": "r3lik",
+          "caption": "r3lik's edition, live while he's awake · Oct 26, 2026",
+          "alt": "r3lik.com in r3lik's edition: giant r3lik wordmark, AKA Mike Czarny, the Agent Engineer title with his mustached face, and the bio"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Research briefs",
+      "when": "on demand",
+      "blurb": "When a question needs more than a tweet, chkm8 writes a cited brief. The latest asked whether agent swarms are real or hype, and landed on a rule: many analysts, one trigger finger.",
+      "r3lik": "Asks the question and decides what makes it into the design.",
+      "chkm8": "Reads the repos and papers, writes it up with sources.",
+      "jobs": [],
+      "compact": true
+    },
+    {
+      "id": "digest",
+      "name": "Daily newsletters",
+      "when": "The chkm8 Digest 07:00 · Five Chains 07:15 PT",
+      "blurb": "Two morning newsletters. The chkm8 Digest covers crypto and perps: market breadth, the narratives that moved, what our own book did, and one spot idea or a reason to skip one. Five Chains follows BTC, ETH, NEAR, ZEC and XMR, block by block.",
+      "r3lik": "Set up its mail account and decided what they cover, the chains and the look. Reads them and argues back.",
+      "chkm8": "Pulls the overnight data, writes, designs and sends both.",
+      "jobs": [
+        "Morning market digest",
+        "Five Chains digest"
+      ],
+      "compact": true
+    }
+  ]
+}
