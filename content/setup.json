@@ -1,0 +1,43 @@
+{
+  "_note": "Running an agent for real: how chkm8 is separated from r3lik. Rendered in A4 #notes and by the console `setup` command. Public facts only: no account numbers, addresses of servers, or key locations beyond 'Keychain'.",
+  "items": [
+    {
+      "k": "Accounts",
+      "t": "Its own everything",
+      "d": "r3lik set up a separate account for everything it touches, and it is never signed in to his.",
+      "list": [
+        "EVM wallet",
+        "Lighter",
+        "X: [@Chkm8_agent](https://x.com/Chkm8_agent)",
+        "GitHub: [chkm8-agent](https://github.com/chkm8-agent)",
+        "Google",
+        "Email"
+      ]
+    },
+    {
+      "k": "Secrets",
+      "t": "Never sees a password",
+      "d": "Logins, cards and 2FA codes are filled from a vault, so they never enter the conversation. Keys live in the Keychain or the cluster and are read by code, never printed."
+    },
+    {
+      "k": "Compute",
+      "t": "Server executes, laptop drives",
+      "d": "Trading, monitoring and reports run on a single-node k3s server in Nuremberg, and orders are signed only there. The agent and its terminal live on a MacBook Air in Los Angeles that holds no exchange key."
+    },
+    {
+      "k": "Network",
+      "t": "A tunnel to the cluster",
+      "d": "The Kubernetes API isn't on the internet. kubectl goes through an SSH tunnel with key-only login, and the firewall lets in SSH and nothing else."
+    },
+    {
+      "k": "Git",
+      "t": "Clean, co-authored commits",
+      "d": "Commits are made as chkm8 and co-authored by r3lik. Private values are stripped before anything reaches GitHub, and every push is scanned for leaks."
+    },
+    {
+      "k": "Operator",
+      "t": "r3lik draws the lines",
+      "d": "He designed these boundaries. He decides the caps, which accounts it may use and what it may post, and can pause new trades at any time."
+    }
+  ]
+}

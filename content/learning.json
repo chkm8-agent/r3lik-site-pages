@@ -1,0 +1,83 @@
+{
+  "_note": "Draft copy by chkm8 for r3lik to edit. 'started' dates come from evidence: chkm8's X account (Sep 2026), first PnL report (Sep 30), Kubernetes shows 'ongoing' (r3lik isn't new to it; the cluster dates from Oct 2026). Correct anything that's wrong. Statuses: in production (running for real), improving (in progress), learning (hands-on, after exploring), exploring (new ideas), queued (next up). Rows are ordered by that lifecycle.",
+  "headline": "On the bleeding edge, always learning.",
+  "lede": "The 2021 version of this site said “I love to learn new technologies.” Still true. The difference now is that iteration is orders of magnitude faster, so attention to detail matters more than ever: when anything can ship in minutes, the details are the work.",
+  "items": [
+    {
+      "topic": "Autonomous agents",
+      "started": "Sep 2026",
+      "status": "in production",
+      "how": "By running one for real instead of reading about it: chkm8, on a custom agent harness, with its own accounts and its own wallet.",
+      "proof": {
+        "label": "What we run together",
+        "href": "#work"
+      },
+      "live": "hermes"
+    },
+    {
+      "topic": "Kubernetes",
+      "started": "ongoing",
+      "status": "improving",
+      "how": "On a live cluster, not a tutorial: GitOps deploys, CronJobs and a position monitor that has to stay up.",
+      "proof": {
+        "label": "The Orchestrator",
+        "href": "#p-k3s"
+      }
+    },
+    {
+      "topic": "Perps & leverage",
+      "started": "Sep 2026",
+      "status": "learning",
+      "how": "With real money at small size on [Lighter](https://lighter.xyz). Margin, leverage and stops explained in plain language with simple examples first, then a backtest, then a trade.",
+      "proof": {
+        "label": "Perps desk",
+        "href": "#p-trading"
+      }
+    },
+    {
+      "topic": "Agent swarms",
+      "started": "Oct 2026",
+      "status": "exploring",
+      "how": "Many agents splitting one job. Reading [Swarms](https://www.swarms.ai/) and testing where a crowd of agents beats one good one.",
+      "proof": {
+        "label": "Research briefs",
+        "href": "#p-research"
+      }
+    },
+    {
+      "topic": "Agent payments (x402)",
+      "started": "Oct 2026",
+      "status": "exploring",
+      "how": "Agents that pay for their own API calls over plain HTTP, in stablecoins, with no accounts or API keys: [x402](https://x402.org/).",
+      "proof": null
+    },
+    {
+      "topic": "Scoped agent wallets",
+      "started": "next",
+      "status": "queued",
+      "how": "Spending limits enforced on-chain with [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) session keys, not only in chkm8's scripts: a daily budget and a short list of contracts it may touch.",
+      "proof": null
+    },
+    {
+      "topic": "Agent identity (ERC-8004)",
+      "started": "next",
+      "status": "queued",
+      "how": "On-chain identity and reputation for agents ([ERC-8004](https://eips.ethereum.org/EIPS/eip-8004), still a draft), so one agent can check another before paying it.",
+      "proof": null
+    },
+    {
+      "topic": "Agent evals",
+      "started": "next",
+      "status": "queued",
+      "how": "Measuring whether an agent is getting better or worse over time. Service-level targets, but for agents.",
+      "proof": null
+    },
+    {
+      "topic": "MCP servers",
+      "started": "next",
+      "status": "queued",
+      "how": "Packaging chkm8's tools as [MCP](https://modelcontextprotocol.io/) servers that other agents can call, and eventually pay for over x402.",
+      "proof": null
+    }
+  ]
+}
